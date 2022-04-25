@@ -15,5 +15,5 @@ Performance:
 MeanAccuracy = 0.88
 
 <p align="left">
-  <img src="fine_tuned_model.png" width="800">
+  <img src="fine_tuned_model.png" width="400">
 </p>
