@@ -1,6 +1,6 @@
 # Image Classification
 
-Goal: classify images of leafs (like the ones in the example image below), which are divided into categories according to the species of the plant to which they belong. 
+Goal: classify images of leafs, which are divided into categories according to the species of the plant to which they belong. 
 Being a classification problem, given an image, the goal is to predict the correct class label.
 
 The problem is a multiclass classification problem. Thus, you must provide for each image in the test set the corresponding predicted class.
