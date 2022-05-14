@@ -11,17 +11,14 @@ The metric used to evaluate models is the Mean Accuracy. The score is computed a
 MeanAccuracy = Σ1≤i≤N(predictions_i == targets_i) / N , where N is the total number of images in the test set
 
 ## 1. Introduction
-The  given  dataset  is  unbalanced  with  respect  to  theclasses  distribution,  then  we  decided  to use different class weights
-in  order  to  preserve  the  full  dataset proportions both in training, validation and testing.
-
+Dataset is unbalanced, so we use stratified sampling to preserve the proportion between training,validation and test set. Then we split offline with these percentage:
+Training 70%, Validation 20%, Test 10%
 
 ### 2.  Data  Augmentation
-Due  to  the  reduced  dimension  of  the  proposed  datasetcompared to the parameters complexity of the underlying 
-architecture, Data Augmentation purpouse consists in solving this issue by generating at run time several new transformed images
-which allow a better generalized performance of the model.
+We perform data augmentation to achieve a better generalization generating different image at each epoch.
 
 #### Transformations.
-Rotating,  Zooming,Flipping, Brightness, Shifting.
+Rotating, Zooming,Flipping, Brightness, Shifting.
 
 ## 3. Model
 VGG16 as feature extractor, then fine tuned using different class weights.
