@@ -14,6 +14,12 @@ MeanAccuracy = Σ1≤i≤N(predictions_i == targets_i) / N , where N is the tota
 Dataset is unbalanced, so we use stratified sampling to preserve the proportion between training,validation and test set. Then we split offline with these percentage:
 Training 70%, Validation 20%, Test 10%
 
+Sample from each classes:
+
+<p align="left">
+  <img src="images/samples.png" width="600">
+</p>
+
 ### 2.  Data  Augmentation
 We perform data augmentation to achieve a better generalization generating different image at each epoch.
 
@@ -29,6 +35,8 @@ MeanAccuracy Training set = 0.91
 
 Mean Accuracy Test set = 0.88
 
+Purple is TransferLearning Model and blue is FineTuned Model
+
 <p align="left">
-  <img src="fine_tuned_model.png" width="400">
+  <img src="images/fine_tuned_model.png" width="600">
 </p>
